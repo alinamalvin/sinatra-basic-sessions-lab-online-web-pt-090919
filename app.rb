@@ -11,13 +11,6 @@ class App < Sinatra::Base
      @session = session
   end
   
-  get "/" do
-    erb :index
-  end
-
-  post "/checkout" do
-    params.each { |k,v|
-      session[k.to_s] = v
-    }
+  
 
 end
